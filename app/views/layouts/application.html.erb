@@ -7,27 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<HEADER>
-		<NAV class = "be-red white large-padding">
-			<ul class = "no-list row center-xs middle-xs">
-				<li class="no-margin" id="logo">
-					<H1>Blog Facilito</H1>
-				</li>			
-				<li class="col-md">
-					<%= link_to "Inicio", root_path %>
-				</li>
-				<li class="col-md">
-					Diseño
-				</li>	
-				<li class="col-md">
-					Programación
-				</li>
-				<li class="col-md">
-					Tecnología
-				</li>				
-			</ul>
-		</NAV>
-	</HEADER>
+	<%= render "/partials/navigation" %>
+
+	<p class="notice"><%= notice %></p>
+   	<p class="alert"><%= alert %></p>	
 
 <%= yield %>
 

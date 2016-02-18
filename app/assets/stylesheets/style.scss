@@ -14,6 +14,13 @@ html, body{
 .red{
 	color: #E74C3C !important;
 }
+a, a.visited{
+	color: inherit !important;
+	text-decoration: none;
+}
+#logo{
+	font-size: 1.2em;
+}
 .no-margin{
 	margin: 0px;
 }
@@ -24,17 +31,13 @@ html, body{
 	color: #ECF0F1;
 }
 .large-padding{
-	padding: 10px 7px;
+	padding: 8px 5px;
 }
-a, a.visited{
-	color: inherit !important;
-	text-decoration: none;
-}
-#logo{
-	font-size: 1.2em;
-}
-.field{
+.field, .top-space, .actions{
 	margin-top: 1em;
+}
+.text-left{
+	text-align: left;
 }
 .form-control{
 	border: none;
