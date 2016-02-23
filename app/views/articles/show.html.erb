@@ -3,6 +3,7 @@
 </h1>
 <% unless @article.user.nil? %>
 <p>
+	binding.pry
 	Escrito por: <%= @article.user.name %>
 </p>
 <%end %>
@@ -17,15 +18,13 @@
 
 	<%= render 'comments/form' %>
 </div>
-<DIV>
+<div>
 	<% @article.comments.each do |comment| %>
 	<ul>
-		<li>
-			<%= comment.body %> 
-		</li>	
+		<li> <%= comment.body %> Escrito por <%= comment.user.name %>
 	</ul>
 	<% end %>
-</DIV>
+</div>>
 <div>
 	<%= link_to "Editar", edit_article_path(@article) %> 
 </div>

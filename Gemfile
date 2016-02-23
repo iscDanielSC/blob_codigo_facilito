@@ -7,7 +7,7 @@ gem 'rails', '4.2.5.1'
 gem 'sqlite3'
 
 gem 'devise'
-
+gem 'pry', '~> 0.10.3'
 gem 'mysql2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
